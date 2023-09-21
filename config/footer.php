@@ -1,0 +1,1 @@
+<p><?php echo $website_name; ?>&copy2023 - Tous droit réservés</p>
