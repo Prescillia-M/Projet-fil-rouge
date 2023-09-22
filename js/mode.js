@@ -1,14 +1,17 @@
 const toggleButton = document.getElementById('toggle-theme');
 const body = document.body;
+const buttonText = document.getElementById('button-text'); // Ajouter un élément pour le texte du bouton
 
 // Fonction pour basculer entre les thèmes
 function toggleTheme() {
     if (body.classList.contains('dark-theme')) {
         body.classList.remove('dark-theme');
-        localStorage.setItem('theme', 'light'); // Stocker le choix de l'utilisateur dans localStorage
+        localStorage.setItem('theme', 'light');
+        toggleButton.innerText = 'Mode sombre'; // Mettre à jour le texte du bouton en fonction du thème
     } else {
         body.classList.add('dark-theme');
-        localStorage.setItem('theme', 'dark'); // Stocker le choix de l'utilisateur dans localStorage
+        localStorage.setItem('theme', 'dark');
+        toggleButton.innerText = 'Mode clair'; // Mettre à jour le texte du bouton en fonction du thème
     }
 }
 
@@ -18,15 +21,14 @@ toggleButton.addEventListener('click', toggleTheme);
 // Fonction pour détecter et appliquer le thème en fonction des préférences de l'utilisateur
 function detectTheme() {
     const prefersDarkMode = window.matchMedia("(prefers-color-scheme: light)").matches;
-    
-    // Obtenir le choix de l'utilisateur depuis localStorage
     const userTheme = localStorage.getItem('theme');
 
-    // Si l'utilisateur a choisi un thème, utilisez-le, sinon suivez les préférences du système
     if (userTheme === 'dark' || (prefersDarkMode && userTheme !== 'light')) {
         body.classList.add('dark-theme');
+        toggleButton.innerText = 'Mode clair'; // Mettre à jour le texte du bouton en fonction du thème
     } else {
         body.classList.remove('dark-theme');
+        toggleButton.innerText = 'Mode sombre'; // Mettre à jour le texte du bouton en fonction du thème
     }
 }
 
