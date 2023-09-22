@@ -1,0 +1,31 @@
+form input {
+    border-radius: 20px;
+    background-color: black;
+    padding: 10px;
+    width: 200px;
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#button1 {
+    position: absolute;
+    bottom: 25;
+    right: 0;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+}
+#pub-betclic {
+    text-align: right;
+}
+body {
+    background-image: url(./image-logo/Fond_Fil-rouge.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
