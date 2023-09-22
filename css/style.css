@@ -1,0 +1,132 @@
+/* Couleurs général */
+:root {
+  /* dark mode (mode1) */
+  --dark-bodybackground: #212121;
+  --dark-body-color: #ffffff;
+  --dark-header-nav-footer: #161616;
+  --dark-nav-hover: #313131;
+  --dark-header-nav-footer-police: #ffffff;
+
+  /* light mode (mode2) */
+  --light-bodybackground: #ffffff;
+  --light-body-color: #1e1e1e;
+  --light-header-nav-footer: #f1f1f1;
+  --light-nav-hover: #d4d4d4;
+  --light-header-nav-footer-police: #1e1e1e;
+}
+
+/* Element toujours collé (header, nav & footer) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--light-bodybackground);
+  color: var(--light-body-color);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body.dark-theme {
+  background-color: var(--dark-bodybackground);
+  color: var(--dark-body-color);
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+body:not(.dark-theme) .header-top {
+  background-color: var(--light-header-nav-footer);
+  color: var(--light-header-nav-footer-police);
+}
+
+body.dark-theme .header-top {
+  background-color: var(--dark-header-nav-footer);
+  color: var(--dark-header-nav-footer-police);
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  padding: 0;
+}
+
+body:not(.dark-theme) .sidebar {
+  background-color: var(--light-header-nav-footer);
+  color: var(--light-header-nav-footer-police);
+}
+
+body.dark-theme .sidebar {
+  background-color: var(--dark-header-nav-footer);
+  color: var(--dark-header-nav-footer-police);
+}
+
+.sidebar ul {
+  list-style-type: none;
+  margin-top: 50%;
+}
+
+.sidebar ul li {
+  margin-bottom: 1px;
+}
+
+.sidebar h2 {
+  padding-left: 20px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  padding: 10px 30px;
+}
+
+body:not(.dark-theme) .sidebar a {
+  background-color: var(--light-header-nav-footer);
+  color: var(--light-header-nav-footer-police);
+}
+
+body.dark-theme .sidebar a {
+  background-color: var(--dark-header-nav-footer);
+  color: var(--dark-header-nav-footer-police);
+}
+
+body:not(.dark-theme) .sidebar a:hover {
+  background-color: var(--light-nav-hover);
+  color: var(--light-header-nav-footer-police);
+}
+
+body.dark-theme .sidebar a:hover {
+  background-color: var(--dark-nav-hover);
+  color: var(--dark-header-nav-footer-police);
+}
+
+.logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.header-button a {
+  text-align: justify;
+  margin-right: 30px;
+  padding: 10px 20px;
+  background-color: #ff5722;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Styles du contenu du site */
+.content {
+  margin-top: 70px;
+  margin-left: 225px;
+}
