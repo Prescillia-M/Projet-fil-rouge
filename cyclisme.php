@@ -5,7 +5,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Assistance /
+  <title>Cyclisme /
     <?php echo $website_name; ?>
   </title>
   <link rel="stylesheet" href="./css/style.css">
@@ -22,10 +22,11 @@
 
   <!-- contenu de la page ici -->
   <div class="content">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quidem ipsa sint exercitationem nemo quas
-      quisquam quos dignissimos tempore. Rem voluptatum nobis autem laboriosam nemo dolor quas eligendi velit possimus.
-    </p>
-  </div>
+    
+  
+    <p>Développer et mettre le contenu cyclisme.</p>
+      
+    </div>
 
   <!-- Configuration général du footer: (config -> footer.php) -->
   <footer>
