@@ -1,20 +1,24 @@
 /* Couleurs général */
 :root {
-  /* dark mode (mode1) */
-  --dark-bodybackground: #212121;
-  --dark-body-color: #ffffff;
-  --dark-header-nav-footer: #161616;
-  --dark-nav-hover: #313131;
-  --dark-nav-active: #191919;
-  --dark-header-nav-footer-police: #ffffff;
-
   /* light mode (mode2) */
   --light-bodybackground: #ffffff;
   --light-body-color: #1e1e1e;
   --light-header-nav-footer: #f1f1f1;
+  --light-header-nav-footer-police: #1e1e1e;
   --light-nav-hover: #d4d4d4;
   --light-nav-active: #c4c4c4;
-  --light-header-nav-footer-police: #1e1e1e;
+  --light-header-btn: #d4d4d4;
+  --light-header-btn-hover: #eaeaea;
+
+  /* dark mode (mode2) */
+  --dark-bodybackground: #212121;
+  --dark-body-color: #ffffff;
+  --dark-header-nav-footer: #161616;
+  --dark-header-nav-footer-police: #ffffff;
+  --dark-nav-hover: #313131;
+  --dark-nav-active: #191919;
+  --dark-header-btn: #313131;
+  --dark-header-btn-hover: #3e3e3e;
 }
 
 /* Element toujours collé (header, nav & footer) */
@@ -25,15 +29,17 @@
 }
 
 /* transition des modes (sombre / clair) regroupant: bouton, header, navigation..*/
-body, .header-top, .sidebar, .sidebar a, #toggle-theme {
-  transition: 0.5s;
-  
+body, .header-top, footer, .sidebar, .sidebar a, #toggle-theme, .login-btn, .help-btn {
+  transition: 0.5s; /* Délais de 0.5secondes au changement dark/light */
 }
 
 body {
   background-color: var(--light-bodybackground);
   color: var(--light-body-color);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 body.dark-theme {
@@ -58,6 +64,7 @@ body.dark-theme .header-top {
   background-color: var(--dark-header-nav-footer);
   color: var(--dark-header-nav-footer-police);
 }
+
 
 .sidebar {
   position: fixed;
@@ -152,28 +159,149 @@ body.dark-theme a.active {
   width: 80%;
 }
 
-body:not(.dark-mode) #toggle-theme, #toggle-theme::before {
+body:not(.dark-mode) #toggle-theme,
+#toggle-theme::before {
   background-color: var(--light-nav-hover);
   color: var(--light-header-nav-footer-police);
 }
 
-body:not(.dark-theme) #toggle-theme:hover, #toggle-theme::before {
+body:not(.dark-theme) #toggle-theme:hover,
+#toggle-theme::before {
   background-color: var(--dark-nav-hover);
   color: var(--dark-header-nav-footer-police);
 }
 
-body.dark-theme #toggle-theme, #toggle-theme::before {
+body.dark-theme #toggle-theme,
+#toggle-theme::before {
   background-color: var(--dark-nav-hover);
   color: var(--dark-header-nav-footer-police);
 }
 
-body.dark-theme #toggle-theme:hover, #toggle-theme::before {
+body.dark-theme #toggle-theme:hover,
+#toggle-theme::before {
   background-color: var(--light-nav-hover);
   color: var(--light-header-nav-footer-police);
+}
+
+/* Bouton connexion / Inscription */
+.login-btn {
+  position: fixed;
+  top: 15px;
+  padding: 7px;
+  border-radius: 5px;
+  right: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+.help-btn {
+  position: fixed;
+  top: 48px;
+  padding: 7px;
+  border-radius: 5px;
+  right: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+body:not(.dark-theme) .login-btn {
+  background-color: var(--light-header-btn);
+  color: var(--light-header-nav-footer-police);
+}
+
+body.dark-theme .login-btn {
+  background-color: var(--dark-header-btn);
+  color: var(--dark-header-nav-footer-police);
+}
+
+body:not(.dark-theme) .login-btn:hover {
+  background-color: var(--light-header-btn-hover);
+}
+
+body.dark-theme .login-btn:hover {
+  background-color: var(--dark-header-btn-hover);
+}
+
+body:not(.dark-theme) .help-btn {
+  background-color: var(--light-header-btn);
+  color: var(--light-header-nav-footer-police);
+}
+
+body.dark-theme .help-btn {
+  background-color: var(--dark-header-btn);
+  color: var(--dark-header-nav-footer-police);
+}
+
+body:not(.dark-theme) .help-btn:hover {
+  background-color: var(--light-header-btn-hover);
+}
+
+body.dark-theme .help-btn:hover {
+  background-color: var(--dark-header-btn-hover);
+}
+
+footer {
+  margin-top: 50px;
+  padding: 30px;
+  text-align: center;
+  width: 100%;
+}
+
+body:not(.dark-theme) footer {
+  background-color: var(--light-header-nav-footer);
+  color: var(--light-header-nav-footer-police);
+}
+
+body.dark-theme footer {
+  background-color: var(--dark-header-nav-footer);
+  color: var(--dark-header-nav-footer-police);
+}
+
+/* Bouton réseaux sociaux */
+#btn-facebook {
+  background-color: #3b5998;
+  border:none;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  color: #fff;
+  width: 10%;
+  cursor: pointer;
+}
+#btn-twitter {
+  background-color: #1DA1F2;
+  border:none;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  color: #fff;
+  width: 10%;
+  cursor: pointer;
+}
+#btn-instagram {
+  background-color: #405de6;
+  border:none;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  color: #fff;
+  width: 10%;
+  cursor: pointer;
+}
+
+#btn-facebook:hover {
+  background-color: #4465ac;
+}
+#btn-twitter:hover {
+  background-color: #35acf5;
+}
+#btn-instagram:hover {
+  background-color: #5870e8;
 }
 
 /* Styles du contenu du site */
 .content {
-  margin-top: 70px;
+  margin-top: 105px;
   margin-left: 225px;
+  flex-grow: 1;
 }

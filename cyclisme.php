@@ -28,11 +28,9 @@
   </div>
 
   <!-- Configuration général du footer: (config -> footer.php) -->
-  <!-- <footer>
-      <p>
-        <?php include('./config/footer.php'); ?>
-      </p>
-  </footer> -->
+  <footer>
+    <?php include('./config/footer.php'); ?>
+  </footer>
 </body>
 
 </html>

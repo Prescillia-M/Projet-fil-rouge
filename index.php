@@ -22,16 +22,59 @@
 
   <!-- contenu de la page ici -->
   <div class="content">
-
-    <p>index</p>
+    
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatibus dolorem debitis ipsam vero dolore enim, autem dolor fugit iste, cumque, alias cupiditate omnis qui placeat esse molestiae? Nesciunt, velit.
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatibus dolorem debitis ipsam vero dolore enim, autem dolor fugit iste, cumque, alias cupiditate omnis qui placeat esse molestiae? Nesciunt, velit.
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatibus dolorem debitis ipsam vero dolore enim, autem dolor fugit iste, cumque, alias cupiditate omnis qui placeat esse molestiae? Nesciunt, velit.
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatibus dolorem debitis ipsam vero dolore enim, autem dolor fugit iste, cumque, alias cupiditate omnis qui placeat esse molestiae? Nesciunt, velit.
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatibus dolorem debitis ipsam vero dolore enim, autem dolor fugit iste, cumque, alias cupiditate omnis qui placeat esse molestiae? Nesciunt, velit.
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatibus dolorem debitis ipsam vero dolore enim, autem dolor fugit iste, cumque, alias cupiditate omnis qui placeat esse molestiae? Nesciunt, velit.
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatibus dolorem debitis ipsam vero dolore enim, autem dolor fugit iste, cumque, alias cupiditate omnis qui placeat esse molestiae? Nesciunt, velit.
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatibus dolorem debitis ipsam vero dolore enim, autem dolor fugit iste, cumque, alias cupiditate omnis qui placeat esse molestiae? Nesciunt, velit.
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatibus dolorem debitis ipsam vero dolore enim, autem dolor fugit iste, cumque, alias cupiditate omnis qui placeat esse molestiae? Nesciunt, velit.
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatibus dolorem debitis ipsam vero dolore enim, autem dolor fugit iste, cumque, alias cupiditate omnis qui placeat esse molestiae? Nesciunt, velit.
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatibus dolorem debitis ipsam vero dolore enim, autem dolor fugit iste, cumque, alias cupiditate omnis qui placeat esse molestiae? Nesciunt, velit.
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatibus dolorem debitis ipsam vero dolore enim, autem dolor fugit iste, cumque, alias cupiditate omnis qui placeat esse molestiae? Nesciunt, velit.
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatibus dolorem debitis ipsam vero dolore enim, autem dolor fugit iste, cumque, alias cupiditate omnis qui placeat esse molestiae? Nesciunt, velit.
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatibus dolorem debitis ipsam vero dolore enim, autem dolor fugit iste, cumque, alias cupiditate omnis qui placeat esse molestiae? Nesciunt, velit.
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatibus dolorem debitis ipsam vero dolore enim, autem dolor fugit iste, cumque, alias cupiditate omnis qui placeat esse molestiae? Nesciunt, velit.
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatibus dolorem debitis ipsam vero dolore enim, autem dolor fugit iste, cumque, alias cupiditate omnis qui placeat esse molestiae? Nesciunt, velit.
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatibus dolorem debitis ipsam vero dolore enim, autem dolor fugit iste, cumque, alias cupiditate omnis qui placeat esse molestiae? Nesciunt, velit.
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatibus dolorem debitis ipsam vero dolore enim, autem dolor fugit iste, cumque, alias cupiditate omnis qui placeat esse molestiae? Nesciunt, velit.
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatibus dolorem debitis ipsam vero dolore enim, autem dolor fugit iste, cumque, alias cupiditate omnis qui placeat esse molestiae? Nesciunt, velit.
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatibus dolorem debitis ipsam vero dolore enim, autem dolor fugit iste, cumque, alias cupiditate omnis qui placeat esse molestiae? Nesciunt, velit.
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatibus dolorem debitis ipsam vero dolore enim, autem dolor fugit iste, cumque, alias cupiditate omnis qui placeat esse molestiae? Nesciunt, velit.
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatibus dolorem debitis ipsam vero dolore enim, autem dolor fugit iste, cumque, alias cupiditate omnis qui placeat esse molestiae? Nesciunt, velit.
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatibus dolorem debitis ipsam vero dolore enim, autem dolor fugit iste, cumque, alias cupiditate omnis qui placeat esse molestiae? Nesciunt, velit.
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatibus dolorem debitis ipsam vero dolore enim, autem dolor fugit iste, cumque, alias cupiditate omnis qui placeat esse molestiae? Nesciunt, velit.
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatibus dolorem debitis ipsam vero dolore enim, autem dolor fugit iste, cumque, alias cupiditate omnis qui placeat esse molestiae? Nesciunt, velit.
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatibus dolorem debitis ipsam vero dolore enim, autem dolor fugit iste, cumque, alias cupiditate omnis qui placeat esse molestiae? Nesciunt, velit.
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatibus dolorem debitis ipsam vero dolore enim, autem dolor fugit iste, cumque, alias cupiditate omnis qui placeat esse molestiae? Nesciunt, velit.
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatibus dolorem debitis ipsam vero dolore enim, autem dolor fugit iste, cumque, alias cupiditate omnis qui placeat esse molestiae? Nesciunt, velit.
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Lab  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatibus dolorem debitis ipsam vero dolore enim, autem dolor fugit iste, cumque, alias cupiditate omnis qui placeat esse molestiae? Nesciunt, velit.
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatibus dolorem debitis ipsam vero dolore enim, autem dolor fugit iste, cumque, alias cupiditate omnis qui placeat esse molestiae? Nesciunt, velit.
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatibus dolorem debitis ipsam vero dolore enim, autem dolor fugit iste, cumque, alias cupiditate omnis qui placeat esse molestiae? Nesciunt, velit.
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatibus dolorem debitis ipsam vero dolore enim, autem dolor fugit iste, cumque, alias cupiditate omnis qui placeat esse molestiae? Nesciunt, velit.
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatibus dolorem debitis ipsam vero dolore enim, autem dolor fugit iste, cumque, alias cupiditate omnis qui placeat esse molestiae? Nesciunt, velit.
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatibus dolorem debitis ipsam vero dolore enim, autem dolor fugit iste, cumque, alias cupiditate omnis qui placeat esse molestiae? Nesciunt, velit.
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatibus dolorem debitis ipsam vero dolore enim, autem dolor fugit iste, cumque, alias cupiditate omnis qui placeat esse molestiae? Nesciunt, velit.
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatibus dolorem debitis ipsam vero dolore enim, autem dolor fugit iste, cumque, alias cupiditate omnis qui placeat esse molestiae? Nesciunt, velit.
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatibus dolorem debitis ipsam vero dolore enim, autem dolor fugit iste, cumque, alias cupiditate omnis qui placeat esse molestiae? Nesciunt, velit.
+ore voluptatibus dolorem debitis ipsam vero dolore enim, autem dolor fugit iste, cumque, alias cupiditate omnis qui placeat esse molestiae? Nesciunt, velit.
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatibus dolorem debitis ipsam vero dolore enim, autem dolor fugit iste, cumque, alias cupiditate omnis qui placeat esse molestiae? Nesciunt, velit.
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatibus dolorem debitis ipsam vero dolore enim, autem dolor fugit iste, cumque, alias cupiditate omnis qui placeat esse molestiae? Nesciunt, velit.
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatibus dolorem debitis ipsam vero dolore enim, autem dolor fugit iste, cumque, alias cupiditate omnis qui placeat esse molestiae? Nesciunt, velit.
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatibus dolorem debitis ipsam vero dolore enim, autem dolor fugit iste, cumque, alias cupiditate omnis qui placeat esse molestiae? Nesciunt, velit.
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatibus dolorem debitis ipsam vero dolore enim, autem dolor fugit iste, cumque, alias cupiditate omnis qui placeat esse molestiae? Nesciunt, velit.
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatibus dolorem debitis ipsam vero dolore enim, autem dolor fugit iste, cumque, alias cupiditate omnis qui placeat esse molestiae? Nesciunt, velit.
+  
+    
   </div>
 
   <!-- Configuration général du footer: (config -> footer.php) -->
-  <!-- <footer>
-      <p>
-        <?php include('./config/footer.php'); ?>
-      </p>
-  </footer> -->
+  <footer>
+    <?php include('./config/footer.php'); ?>
+  </footer>
 </body>
 
 </html>
