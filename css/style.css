@@ -9,6 +9,7 @@
   --light-nav-active: #c4c4c4;
   --light-header-btn: #d4d4d4;
   --light-header-btn-hover: #eaeaea;
+  --light-modal-cookies-bg: #ffffff;
 
   /* dark mode (mode2) */
   --dark-bodybackground: #212121;
@@ -19,6 +20,7 @@
   --dark-nav-active: #191919;
   --dark-header-btn: #313131;
   --dark-header-btn-hover: #3e3e3e;
+  --dark-modal-cookies-bg: #0c0c0c;
 }
 
 /* Element toujours collé (header, nav & footer) */
@@ -297,6 +299,105 @@ body.dark-theme footer {
 }
 #btn-instagram:hover {
   background-color: #5870e8;
+}
+
+#cookie-consent-box {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #191919;
+  padding: 10px;
+  border: 1px solid #101010;
+  color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 370px;
+  display: none;
+  overflow: hidden; /* Empêcher le texte de passer en dessous de l'image */
+}
+
+/* Styles pour l'image */
+#cookie-image {
+  float: left;
+  margin-left: 10px;
+  max-width: 100px;
+  height: 60px;
+}
+#cookie-consent-box p {
+  clear: both;
+}
+#cookie-consent-box a {
+  color: beige;
+}
+
+#cookie-consent-box h2 {
+  padding: 10px;
+}
+
+.accept-cookies-btn {
+  background-color: #B4814A;
+  color: #fff;
+  border: none;
+  margin-top: 5px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.refuse-cookies-btn {
+  background-color: #9d2b2b;
+  color: #fff;
+  border: none;
+  margin-top: 5px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-cookie {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  height: 450px;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content-cookie {
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.modal-content-cookie p {
+  padding: 30px 0;
+}
+
+body:not(.dark-theme) .modal-content-cookie {
+  background-color: var(--light-modal-cookies-bg);
+  color: var(--light-body-color);
+}
+
+body.dark-theme .modal-content-cookie {
+  background-color: var(--dark-modal-cookies-bg);
+  color: var(--dark-body-color);
+}
+
+.modal-close-cookie {
+  background-color: #B4814A;
+  color: #fff;
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.modal-close-cookie:hover {
+  background-color: #b48757;
 }
 
 /* Styles du contenu du site */

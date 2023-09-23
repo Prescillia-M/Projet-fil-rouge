@@ -22,12 +22,15 @@
 
   <!-- contenu de la page ici -->
   <div class="content">
-    
-  
+
+
     <p>Développer et mettre le contenu basketball.</p>
-      
-    
+
+
   </div>
+
+  <!-- Configuration des cookies. (config -> cookies.php) -->
+  <?php include('./config/cookies.php'); ?>
 
   <!-- Configuration général du footer: (config -> footer.php) -->
   <footer>

@@ -1,3 +1,5 @@
+<!-- INFORMATION: Le footer est à mettre en forme de box (côte à côte). -->
+
 <!-- A propos -->
 <p class="footer-about">
 <h2><i class="fas fa-address-card"></i> A propos</h2>
@@ -13,6 +15,7 @@ la <a href="https://www.1formation-1job.com/nurserie/" target="_blank">Nurserie<
 <h2><i class="fas fa-list"></i> Liens utiles</h2>
 <br>
 <ul>
+    <!-- Ne pas toucher aux liens, on fera par pop-up ! -->
     <li><a href="">Conditions d'utilisation</a></li>
     <li><a href="">Conditions d'inscriptions</a></li>
     <li><a href="">Nos délicieux cookies</a></li>

@@ -22,10 +22,13 @@
 
   <!-- contenu de la page ici -->
   <div class="content">
-    
-  <p>Développer et mettre la page d'Accueil.</p>
-    
+
+    <p>Développer et mettre la page d'Accueil.</p>
+
   </div>
+
+  <!-- Configuration des cookies. (config -> cookies.php) -->
+  <?php include('./config/cookies.php'); ?>
 
   <!-- Configuration général du footer: (config -> footer.php) -->
   <footer>
