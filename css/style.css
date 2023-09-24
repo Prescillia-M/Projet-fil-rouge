@@ -1,4 +1,4 @@
-/* Couleurs général */
+/* Couleurs général (dark & light mode)*/
 :root {
   /* light mode (mode2) */
   --light-bodybackground: #ffffff;
@@ -23,6 +23,8 @@
   --dark-modal-cookies-bg: #0c0c0c;
 }
 
+/* ================================================================================================================== */
+
 /* Element toujours collé (header, nav & footer) */
 * {
   margin: 0;
@@ -31,7 +33,7 @@
 }
 
 /* transition des modes (sombre / clair) regroupant: bouton, header, navigation..*/
-body, .header-top, footer, .sidebar, .sidebar a, #toggle-theme, .login-btn, .help-btn {
+body, .header-top, footer, .sidebar, .sidebar a, #toggle-theme, .login-btn, .help-btn, .modal-content-cookie { /* Ajouter à la suite les nouveaux selecteurs (dark/light)*/
   transition: 0.5s; /* Délais de 0.5secondes au changement dark/light */
 }
 
@@ -44,11 +46,7 @@ body {
   min-height: 100vh;
 }
 
-body.dark-theme {
-  background-color: var(--dark-bodybackground);
-  color: var(--dark-body-color);
-}
-
+/* Barre en haut du site (logo, connexion...) */
 header {
   text-align: center;
   padding: 20px;
@@ -56,18 +54,17 @@ header {
   top: 0;
   width: 100%;
 }
-
-body:not(.dark-theme) .header-top {
-  background-color: var(--light-header-nav-footer);
-  color: var(--light-header-nav-footer-police);
+.header-button a {
+  text-align: justify;
+  margin-right: 30px;
+  padding: 10px 20px;
+  background-color: #ff5722;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
 }
 
-body.dark-theme .header-top {
-  background-color: var(--dark-header-nav-footer);
-  color: var(--dark-header-nav-footer-police);
-}
-
-
+/* Menu de navigation */
 .sidebar {
   position: fixed;
   top: 0;
@@ -75,16 +72,6 @@ body.dark-theme .header-top {
   width: 200px;
   height: 100%;
   padding: 0;
-}
-
-body:not(.dark-theme) .sidebar {
-  background-color: var(--light-header-nav-footer);
-  color: var(--light-header-nav-footer-police);
-}
-
-body.dark-theme .sidebar {
-  background-color: var(--dark-header-nav-footer);
-  color: var(--dark-header-nav-footer-police);
 }
 
 .sidebar ul {
@@ -107,51 +94,13 @@ body.dark-theme .sidebar {
   padding: 10px 30px;
 }
 
-body:not(.dark-theme) .sidebar a {
-  background-color: var(--light-header-nav-footer);
-  color: var(--light-header-nav-footer-police);
-}
-
-body.dark-theme .sidebar a {
-  background-color: var(--dark-header-nav-footer);
-  color: var(--dark-header-nav-footer-police);
-}
-
-body:not(.dark-theme) .sidebar a:hover {
-  background-color: var(--light-nav-hover);
-  color: var(--light-header-nav-footer-police);
-}
-
-body.dark-theme .sidebar a:hover {
-  background-color: var(--dark-nav-hover);
-  color: var(--dark-header-nav-footer-police);
-}
-
-body:not(.dark-theme) a.active {
-  background-color: var(--light-nav-active);
-  color: var(--light-header-nav-footer-police);
-}
-
-body.dark-theme a.active {
-  background-color: var(--dark-nav-active);
-  color: var(--dark-header-nav-footer-police);
-}
-
+/* Logo du site */
 .logo img {
   max-width: 100%;
   height: auto;
 }
 
-.header-button a {
-  text-align: justify;
-  margin-right: 30px;
-  padding: 10px 20px;
-  background-color: #ff5722;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
+/* Bouton alterner entre dark/light thème */
 #toggle-theme {
   margin-left: 20px;
   border-radius: 5px;
@@ -161,31 +110,7 @@ body.dark-theme a.active {
   width: 80%;
 }
 
-body:not(.dark-mode) #toggle-theme,
-#toggle-theme::before {
-  background-color: var(--light-nav-hover);
-  color: var(--light-header-nav-footer-police);
-}
-
-body:not(.dark-theme) #toggle-theme:hover,
-#toggle-theme::before {
-  background-color: var(--dark-nav-hover);
-  color: var(--dark-header-nav-footer-police);
-}
-
-body.dark-theme #toggle-theme,
-#toggle-theme::before {
-  background-color: var(--dark-nav-hover);
-  color: var(--dark-header-nav-footer-police);
-}
-
-body.dark-theme #toggle-theme:hover,
-#toggle-theme::before {
-  background-color: var(--light-nav-hover);
-  color: var(--light-header-nav-footer-police);
-}
-
-/* Bouton connexion / Inscription */
+/* Bouton Connexion / Inscription */
 .login-btn {
   position: fixed;
   top: 15px;
@@ -196,6 +121,7 @@ body.dark-theme #toggle-theme:hover,
   cursor: pointer;
 }
 
+/* Bouton Assistance */
 .help-btn {
   position: fixed;
   top: 48px;
@@ -206,42 +132,7 @@ body.dark-theme #toggle-theme:hover,
   cursor: pointer;
 }
 
-body:not(.dark-theme) .login-btn {
-  background-color: var(--light-header-btn);
-  color: var(--light-header-nav-footer-police);
-}
-
-body.dark-theme .login-btn {
-  background-color: var(--dark-header-btn);
-  color: var(--dark-header-nav-footer-police);
-}
-
-body:not(.dark-theme) .login-btn:hover {
-  background-color: var(--light-header-btn-hover);
-}
-
-body.dark-theme .login-btn:hover {
-  background-color: var(--dark-header-btn-hover);
-}
-
-body:not(.dark-theme) .help-btn {
-  background-color: var(--light-header-btn);
-  color: var(--light-header-nav-footer-police);
-}
-
-body.dark-theme .help-btn {
-  background-color: var(--dark-header-btn);
-  color: var(--dark-header-nav-footer-police);
-}
-
-body:not(.dark-theme) .help-btn:hover {
-  background-color: var(--light-header-btn-hover);
-}
-
-body.dark-theme .help-btn:hover {
-  background-color: var(--dark-header-btn-hover);
-}
-
+/* footer */
 footer {
   margin-top: 50px;
   padding: 30px;
@@ -249,20 +140,10 @@ footer {
   width: 100%;
 }
 
-body:not(.dark-theme) footer {
-  background-color: var(--light-header-nav-footer);
-  color: var(--light-header-nav-footer-police);
-}
-
-body.dark-theme footer {
-  background-color: var(--dark-header-nav-footer);
-  color: var(--dark-header-nav-footer-police);
-}
-
 /* Bouton réseaux sociaux */
 #btn-facebook {
   background-color: #3b5998;
-  border:none;
+  border: none;
   padding: 10px;
   margin: 5px;
   border-radius: 5px;
@@ -271,8 +152,8 @@ body.dark-theme footer {
   cursor: pointer;
 }
 #btn-twitter {
-  background-color: #1DA1F2;
-  border:none;
+  background-color: #1da1f2;
+  border: none;
   padding: 10px;
   margin: 5px;
   border-radius: 5px;
@@ -282,7 +163,7 @@ body.dark-theme footer {
 }
 #btn-instagram {
   background-color: #405de6;
-  border:none;
+  border: none;
   padding: 10px;
   margin: 5px;
   border-radius: 5px;
@@ -301,13 +182,14 @@ body.dark-theme footer {
   background-color: #5870e8;
 }
 
+/* Box message cookie */
 #cookie-consent-box {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #191919;
+  background-color: #b79d80;
   padding: 10px;
-  border: 1px solid #101010;
+  border: 1px solid #b4814a;
   color: #ffffff;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -316,7 +198,7 @@ body.dark-theme footer {
   overflow: hidden; /* Empêcher le texte de passer en dessous de l'image */
 }
 
-/* Styles pour l'image */
+/* Styles pour l'image cookie */
 #cookie-image {
   float: left;
   margin-left: 10px;
@@ -334,8 +216,9 @@ body.dark-theme footer {
   padding: 10px;
 }
 
+/* bouton accepter cookie */
 .accept-cookies-btn {
-  background-color: #B4814A;
+  background-color: #b4814a;
   color: #fff;
   border: none;
   margin-top: 5px;
@@ -344,6 +227,7 @@ body.dark-theme footer {
   cursor: pointer;
 }
 
+/* bouton refuser cookie */
 .refuse-cookies-btn {
   background-color: #9d2b2b;
   color: #fff;
@@ -354,6 +238,7 @@ body.dark-theme footer {
   cursor: pointer;
 }
 
+/* popup cookie */
 .modal-cookie {
   display: none;
   position: fixed;
@@ -376,18 +261,9 @@ body.dark-theme footer {
   padding: 30px 0;
 }
 
-body:not(.dark-theme) .modal-content-cookie {
-  background-color: var(--light-modal-cookies-bg);
-  color: var(--light-body-color);
-}
-
-body.dark-theme .modal-content-cookie {
-  background-color: var(--dark-modal-cookies-bg);
-  color: var(--dark-body-color);
-}
-
+/* bouton fermer le popup cookie */
 .modal-close-cookie {
-  background-color: #B4814A;
+  background-color: #b4814a;
   color: #fff;
   padding: 7px;
   border: none;
@@ -405,4 +281,150 @@ body.dark-theme .modal-content-cookie {
   margin-top: 105px;
   margin-left: 225px;
   flex-grow: 1;
+}
+
+/* 
+
+  MODE CLAIR // CONFIGURATION
+
+*/
+body:not(.dark-theme) .header-top {
+  background-color: var(--light-header-nav-footer);
+  color: var(--light-header-nav-footer-police);
+}
+
+body:not(.dark-theme) .sidebar {
+  background-color: var(--light-header-nav-footer);
+  color: var(--light-header-nav-footer-police);
+}
+
+body:not(.dark-theme) .sidebar a {
+  background-color: var(--light-header-nav-footer);
+  color: var(--light-header-nav-footer-police);
+}
+
+body:not(.dark-theme) .sidebar a:hover {
+  background-color: var(--light-nav-hover);
+  color: var(--light-header-nav-footer-police);
+}
+
+body:not(.dark-theme) a.active {
+  background-color: var(--light-nav-active);
+  color: var(--light-header-nav-footer-police);
+}
+
+body:not(.dark-theme) #toggle-theme,
+body:not(.dark-theme) #toggle-theme::before {
+  background-color: var(--light-nav-hover);
+  color: var(--light-header-nav-footer-police);
+}
+
+body:not(.dark-theme) #toggle-theme:hover,
+body:not(.dark-theme) #toggle-theme::before {
+  background-color: var(--dark-nav-hover);
+  color: var(--dark-header-nav-footer-police);
+}
+
+body:not(.dark-theme) .login-btn {
+  background-color: var(--light-header-btn);
+  color: var(--light-header-nav-footer-police);
+}
+
+body:not(.dark-theme) .login-btn:hover {
+  background-color: var(--light-header-btn-hover);
+}
+
+body:not(.dark-theme) .help-btn {
+  background-color: var(--light-header-btn);
+  color: var(--light-header-nav-footer-police);
+}
+
+body:not(.dark-theme) .help-btn:hover {
+  background-color: var(--light-header-btn-hover);
+}
+
+body:not(.dark-theme) footer {
+  background-color: var(--light-header-nav-footer);
+  color: var(--light-header-nav-footer-police);
+}
+
+body:not(.dark-theme) .modal-content-cookie {
+  background-color: var(--light-modal-cookies-bg);
+  color: var(--light-body-color);
+}
+
+/* 
+
+  MODE SOMBRE // CONFIGURATION
+
+*/
+
+body.dark-theme {
+  background-color: var(--dark-bodybackground);
+  color: var(--dark-body-color);
+}
+
+body.dark-theme .header-top {
+  background-color: var(--dark-header-nav-footer);
+  color: var(--dark-header-nav-footer-police);
+}
+
+body.dark-theme .sidebar {
+  background-color: var(--dark-header-nav-footer);
+  color: var(--dark-header-nav-footer-police);
+}
+
+body.dark-theme .sidebar a {
+  background-color: var(--dark-header-nav-footer);
+  color: var(--dark-header-nav-footer-police);
+}
+
+body.dark-theme .sidebar a:hover {
+  background-color: var(--dark-nav-hover);
+  color: var(--dark-header-nav-footer-police);
+}
+
+body.dark-theme a.active {
+  background-color: var(--dark-nav-active);
+  color: var(--dark-header-nav-footer-police);
+}
+
+body.dark-theme #toggle-theme,
+body.dark-theme #toggle-theme::before {
+  background-color: var(--dark-nav-hover);
+  color: var(--dark-header-nav-footer-police);
+}
+
+body.dark-theme #toggle-theme:hover,
+body.dark-theme #toggle-theme::before {
+  background-color: var(--light-nav-hover);
+  color: var(--light-header-nav-footer-police);
+}
+
+body.dark-theme .login-btn {
+  background-color: var(--dark-header-btn);
+  color: var(--dark-header-nav-footer-police);
+}
+
+body.dark-theme .login-btn:hover {
+  background-color: var(--dark-header-btn-hover);
+}
+
+body.dark-theme .help-btn {
+  background-color: var(--dark-header-btn);
+  color: var(--dark-header-nav-footer-police);
+}
+
+body.dark-theme .help-btn:hover {
+  background-color: var(--dark-header-btn-hover);
+}
+
+body.dark-theme footer {
+  background-color: var(--dark-header-nav-footer);
+  color: var(--dark-header-nav-footer-police);
+}
+
+body.dark-theme .modal-content-cookie {
+  background-color: var(--dark-modal-cookies-bg);
+  color: var(--dark-body-color);
 }
