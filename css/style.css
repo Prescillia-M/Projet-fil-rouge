@@ -3,8 +3,9 @@
   /* light mode (mode2) */
   --light-bodybackground: #ffffff;
   --light-body-color: #1e1e1e;
-  --light-header-nav-footer: #f1f1f1;
+  --light-header-nav-footer: #f9f9f9;
   --light-header-nav-footer-police: #1e1e1e;
+  --light-footer-a: #3a3a3a;
   --light-nav-hover: #d4d4d4;
   --light-nav-active: #c4c4c4;
   --light-header-btn: #d4d4d4;
@@ -16,6 +17,7 @@
   --dark-body-color: #ffffff;
   --dark-header-nav-footer: #161616;
   --dark-header-nav-footer-police: #ffffff;
+  --dark-footer-a: #c5c5c5;
   --dark-nav-hover: #313131;
   --dark-nav-active: #191919;
   --dark-header-btn: #313131;
@@ -135,10 +137,41 @@ header {
 /* footer */
 footer {
   margin-top: 50px;
-  padding: 30px;
+  padding: 15px;
   text-align: center;
   width: 100%;
+  z-index: 2;
 }
+
+/* Conteneur des colonnes */
+.footer-container {
+  display: flex;
+  justify-content: space-between; 
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  flex: 1;
+  text-align: center; 
+  margin: 0 5px;
+}
+
+.footer-column p {
+  max-width: 275px;
+  margin: 0 auto;
+}
+
+/* Styles pour les listes non ordonnées */
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Espacement entre les éléments de la liste */
+footer ul li {
+  margin: 3px 0;
+}
+
 
 /* Bouton réseaux sociaux */
 #btn-facebook {
@@ -148,7 +181,7 @@ footer {
   margin: 5px;
   border-radius: 5px;
   color: #fff;
-  width: 10%;
+  width: 50%;
   cursor: pointer;
 }
 #btn-twitter {
@@ -158,7 +191,7 @@ footer {
   margin: 5px;
   border-radius: 5px;
   color: #fff;
-  width: 10%;
+  width: 50%;
   cursor: pointer;
 }
 #btn-instagram {
@@ -168,7 +201,7 @@ footer {
   margin: 5px;
   border-radius: 5px;
   color: #fff;
-  width: 10%;
+  width: 50%;
   cursor: pointer;
 }
 
@@ -195,7 +228,8 @@ footer {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   max-width: 370px;
   display: none;
-  overflow: hidden; /* Empêcher le texte de passer en dessous de l'image */
+  overflow: hidden;
+  z-index: 3;
 }
 
 /* Styles pour l'image cookie */
@@ -348,6 +382,10 @@ body:not(.dark-theme) footer {
   color: var(--light-header-nav-footer-police);
 }
 
+body:not(.dark-theme) footer a {
+  color: var(--light-footer-a);
+}
+
 body:not(.dark-theme) .modal-content-cookie {
   background-color: var(--light-modal-cookies-bg);
   color: var(--light-body-color);
@@ -422,6 +460,10 @@ body.dark-theme .help-btn:hover {
 body.dark-theme footer {
   background-color: var(--dark-header-nav-footer);
   color: var(--dark-header-nav-footer-police);
+}
+
+body.dark-theme footer a {
+  color: var(--dark-footer-a);
 }
 
 body.dark-theme .modal-content-cookie {
