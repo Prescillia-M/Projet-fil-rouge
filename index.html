@@ -4,58 +4,191 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projet fil rouge</title>
-    <link rel="stylesheet" href="./index.css">
-    <header>
-        <form action="" method="get">
-            <input type="search" name="barre-de-recherche" placeholder="rechercher" id="">
-            <figure>
-                <div id="logo"><img src="./image-logo/logo.jpg" alt="logo">
-            </div>
-            </figure>
-            <div id="button1">
-            <button type="submit">s'inscrire/se connecter</button>
-            <button type="submit">assistance</button>
-            <button type="submit">language</button>
-        </div>
-        </form>
-    </header>
+
+    <style>
+        #searchContainer {
+            position: fixed;
+            top: 0;
+            left: 0;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        }
+
+        #mySearch {
+            width: 200px;
+        }
+
+        #searchButton {
+            margin-left: 10px;
+        }
+
+        #logoContainer {
+            position: fixed;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        #logo {
+            width: 100px;
+            /* Vous pouvez ajuster cette valeur */
+        }
+
+        body {
+            background-image: url('./Images/fond-page-acceuil.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #buttonContainer {
+            position: fixed;
+            top: 0;
+            right: 0;
+        }
+
+        #button1 {
+            display: inline-block;
+            width: 50%;
+        }
+
+        #button2 {
+            display: inline-block;
+            width: 50%;
+        }
+
+        #button3 {
+            display: block;
+            width: 100%;
+        }
+
+        #menu-container {
+            position: absolute;
+            top: 20%;
+            left: 0;
+            transform: translateY(-50%);
+        }
+
+        #menu {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        #article-container {
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        article {
+            font-size: 20px;
+            font-weight: bold;
+            color: blanchedalmond;
+        }
+        #second-article {
+            margin-top: 2cm;
+        }
+
+        #image-container {
+            position: absolute;
+            top: calc(50% + 4cm + 20px);
+            left: calc(50% - 10cm);
+        }
+        #second-image-container {
+            position: absolute;
+            top: calc(50% + 2cm + 20px);
+            left: calc(50% + 5cm);
+        }
+
+        #footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        #footer-button {
+            margin: 10px;
+        }
+
+        button {
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease 0s;
+        }
+        button:hover {
+            box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+            transform: translateY(-7px)
+        }
+       
+    </style>
+
+    <title>The sports hub</title>
 </head>
 
 <body>
-    <nav>
-        <button type="menu"> Menu</button>
-        <button type="submit">Basketball</button>
-        <button type="submit">Automobile</button>
-        <button type="submit">Tennis</button>
-        <button type="submit"> Cyclisme</button>
-        <button type="submit">Boxe</button>
-    </nav>
-    <section>
-        <article><!--ajouter un article sport à la place du lorem-->
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid, repudiandae rerum! Asperiores eveniet
-                quisquam, facere impedit ab excepturi suscipit soluta modi quas officiis, voluptatum a beatae ipsam
-                aliquam consectetur necessitatibus.</p>
-        </article>
-    </section>
-    <section>
-        <a href="https://www.decathlon.fr/">
-            <img src="image-logo/logo-decathlon.png" alt="logo-decathlon">
-        </a>
-        <div id="pub-betclic"><a href="https://www.betclic.fr/">
-            <img src="image-logo/logo-betclic.png" alt="logo-betclic">
-        </div>
-        </a>
-        <article><!--ajouterun article à la place du lorem-->
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus rerum reprehenderit itaque vitae
-                quia. Autem impedit tenetur, veniam natus in minus, voluptatibus, aliquid dolorem quos atque nesciunt
-                alias et expedita?</p>
-        </article>
-    </section>
 
+    <div id="searchContainer">
+        <input type="text" id="mySearch" placeholder="Recherche..">
+        <button id="searchButton" onclick="myFunction()">Envoyer</button>
+    </div>
+
+    <div id="logoContainer">
+        <img id="logo" src="./Images/logo.jpg" alt="Logo">
+    </div>
+
+    <div id="buttonContainer">
+        <button id="button1">S'inscrire/Se connecter</button>
+        <button id="button2">assistance</button>
+        <button id="button3">language</button>
+    </div>
+
+    <div id="menu-container">
+        <div id="menu">
+            <button onclick="alert('Bouton 4 cliqué')">Basketball</button>
+            <button onclick="alert('Bouton 5 cliqué')">Automobile</button>
+            <button onclick="alert('Bouton 6 cliqué')">Tennis</button>
+            <button onclick="alert('Bouton 7 cliqué')">Boxe</button>
+            <button onclick="alert('Bouton 8 cliqué')">Cyclisme</button>
+        </div>
+    </div>
+
+    <div id="article-container">
+        <article>
+            <h2>Titre de l'article</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore recusandae esse doloremque, magni nisi
+                dolor sed minus quis debitis eveniet explicabo expedita asperiores possimus incidunt obcaecati nostrum.
+                Sint, nesciunt iste.</p>
+        </article>
+    
+
+    <article id="second-article">
+        <h2>Résultats</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum modi iusto deleniti dignissimos saepe est, eum reprehenderit, natus quibusdam dolore illo nostrum assumenda sapiente. Culpa earum reiciendis nostrum explicabo perspiciatis!</p>
+      </article>
+    </div>
+
+    <div id="image-container">
+        <a href="./Images/logo-betclic.png">
+          <img src="https://www.betclic.fr/" alt="logo-betclic">
+        </a>
+      </div>
+
+      <div id="second-image-container">
+        <a href="https://www.decathlon.fr/">
+          <img src="./Images/logo-decathlon.png" alt="Description de la seconde image">
+        </a>
+      </div>
+      <footer id="footer">
+        <button id="footer-button" onclick="alert"> conditions d'utilisation</button>
+      </footer>
+
+    <script>
+        function myFunction() {
+            var input, filter;
+            input = document.getElementById("mySearch");
+            filter = input.value.toUpperCase();
+            // Ici, vous pouvez ajouter le code pour filtrer les résultats de la recherche
+        }
+    </script>
+
+    <script src="test.js"></script>
 </body>
-<footer>
-    <input type="button" value="Condition d'utilisation">
-</footer>
 
 </html>
