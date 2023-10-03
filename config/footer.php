@@ -3,7 +3,7 @@
     <div class="footer-column">
       <h2><i class="fas fa-address-card"></i> A propos</h2>
       <p>
-        <b><?php echo $website_name; ?></b> est un projet fil-rouge fondé par <b>Précillia, Téo, Lucas, Yohann</b> et <b>Jason</b> durant leur stage au sein de la <a href="https://www.1formation-1job.com/nurserie/" target="_blank">Nurserie</a>.
+        <b><?php echo $website_name; ?></b> est un projet fil-rouge fondé par <b>Préscillia, Téo, Lucas, Yohann</b> et <b>Jason</b> durant leur stage au sein de la <a href="https://www.1formation-1job.com/nurserie/" target="_blank">Nurserie</a>.
       </p>
     </div>
 
