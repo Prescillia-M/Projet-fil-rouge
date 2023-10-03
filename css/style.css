@@ -35,7 +35,7 @@
 }
 
 /* transition des modes (sombre / clair) regroupant: bouton, header, navigation..*/
-body, .header-top, footer, .sidebar, .sidebar a, #toggle-theme, .login-btn, .help-btn, .modal-content-cookie { /* Ajouter à la suite les nouveaux selecteurs (dark/light)*/
+body, .header-top, footer, footer a, .sidebar, .sidebar a, #toggle-theme, .login-btn, .help-btn, .modal-content-cookie { /* Ajouter à la suite les nouveaux selecteurs (dark/light)*/
   transition: 0.5s; /* Délais de 0.5secondes au changement dark/light */
 }
 
