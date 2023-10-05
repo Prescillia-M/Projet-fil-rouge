@@ -21,11 +21,14 @@
   ?>
 
   <!-- contenu de la page ici -->
-  <div class="content">
-
-    <p>Développer et mettre la page d'Accueil.</p>
-
-  </div>
+    <div class="content">
+      <section class="boxinter">
+        <p>Développer et mettre la page d'Accueil.</p>
+      </section>
+      <section class="boxinter">
+        <p>Développer et mettre la page d'Accueil.</p>
+      </section>
+    </div>
 
   <!-- Configuration des cookies. (config -> cookies.php) -->
   <?php include('./config/cookies.php'); ?>

@@ -317,6 +317,15 @@ footer ul li {
   flex-grow: 1;
 }
 
+.boxinter {
+  border: solid red 3px;
+  width: 300px;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+}
+
 /* 
 
   MODE CLAIR // CONFIGURATION
