@@ -11,6 +11,7 @@
   --light-header-btn: #ebebeb;
   --light-header-btn-hover: #d4d4d4;
   --light-modal-cookies-bg: #ffffff;
+  --light-color-inputText: #1e1e1e;
 
   /* dark mode (mode2) */
   --dark-bodybackground: #212121;
@@ -23,6 +24,7 @@
   --dark-header-btn: #313131;
   --dark-header-btn-hover: #3e3e3e;
   --dark-modal-cookies-bg: #0c0c0c;
+  --dark-color-inputText: #767676;
 }
 
 /* ================================================================================================================== */
@@ -35,8 +37,22 @@
 }
 
 /* transition des modes (sombre / clair) regroupant: bouton, header, navigation..*/
-body, .header-top, footer, footer a, .sidebar, .sidebar a, #toggle-theme, .login-btn, .help-btn, .modal-content-cookie { /* Ajouter à la suite les nouveaux selecteurs (dark/light)*/
-  transition: 0.5s; /* Délais de 0.5secondes au changement dark/light */
+body,
+.header-top,
+footer,
+footer a,
+.sidebar,
+.sidebar a,
+#toggle-theme,
+.login-btn,
+.help-btn,
+.modal-content-cookie,
+textarea,
+input,
+.box-contactus,
+.boxinter,
+select {
+  transition: 0.4s; /* Délais de 0.5secondes au changement dark/light */
 }
 
 body {
@@ -146,13 +162,13 @@ footer {
 /* Conteneur des colonnes */
 .footer-container {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .footer-column {
   flex: 1;
-  text-align: center; 
+  text-align: center;
   margin: 0 5px;
 }
 
@@ -171,7 +187,6 @@ footer ul {
 footer ul li {
   margin: 3px 0;
 }
-
 
 /* Bouton réseaux sociaux */
 #btn-facebook {
@@ -315,6 +330,9 @@ footer ul li {
   margin-top: 105px;
   margin-left: 225px;
   flex-grow: 1;
+  display: flex;
+  justify-content: center; /* Centrer horizontalement le contenu */
+  align-items: center; /* Centrer verticalement le contenu */
 }
 
 .boxinter {
@@ -323,7 +341,72 @@ footer ul li {
   height: 200px;
   display: flex;
   flex-wrap: wrap;
-  justify-content:space-between;
+  justify-content: space-between;
+}
+
+.contactus {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 900px;
+  margin-left: 30px;
+}
+
+.box-contactus {
+  flex: 0 0 calc(50% - 30px); /* Largeur de 50% avec une marge de 30px entre les boîtes */
+  align-items: center;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 0 15px;
+}
+
+.box-contactus h2 {
+  margin-bottom: 20px;
+}
+
+.box-contactus input {
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 7px;
+  margin-bottom: 15px;
+}
+
+.box-contactus p {
+  margin: 50px 0;
+}
+
+.box-contactus select {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  appearance: none;
+  background-image: url('../assets/dropdown.png');
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 24px 24px;
+  padding-right: 30px;
+}
+
+.box-contactus textarea {
+  margin-top: 7px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  height: 200px;
+  width: 500px;
+}
+
+.box-contactus input[type="submit"] {
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 /* 
@@ -397,6 +480,37 @@ body:not(.dark-theme) footer a {
 
 body:not(.dark-theme) .modal-content-cookie {
   background-color: var(--light-modal-cookies-bg);
+  color: var(--light-body-color);
+}
+
+body:not(.dark-theme) .box-contactus {
+  background-color: var(--light-header-nav-footer);
+  color: var(--light-body-color);
+  box-shadow: 0 0 4px #ababab;
+}
+
+body:not(.dark-theme) .box-contactus input {
+  outline: var(--light-header-btn) solid 1px;
+  background-color: var(--light-bodybackground);
+}
+
+body:not(.dark-theme) .box-contactus select {
+  outline: var(--light-header-btn) solid 1px;
+  background-color: var(--light-bodybackground);
+}
+
+body:not(.dark-theme) .box-contactus textarea {
+  outline: var(--light-header-btn) solid 1px;
+  background-color: var(--light-bodybackground);
+}
+
+body:not(.dark-theme) .box-contactus input[type="submit"] {
+  background-color: var(--light-header-btn);
+  color: var(--light-body-color);
+}
+
+body:not(.dark-theme) .box-contactus input[type="submit"]:hover {
+  background-color: var(--light-header-btn-hover);
   color: var(--light-body-color);
 }
 
@@ -478,4 +592,75 @@ body.dark-theme footer a {
 body.dark-theme .modal-content-cookie {
   background-color: var(--dark-modal-cookies-bg);
   color: var(--dark-body-color);
+}
+
+body.dark-theme .box-contactus {
+  background-color: var(--dark-header-nav-footer);
+  color: var(--dark-body-color);
+}
+
+body.dark-theme .box-contactus input {
+  outline: var(--dark-header-btn) solid 1px;
+  background-color: var(--dark-bodybackground);
+  color: var(--dark-body-color);
+}
+
+body.dark-theme .box-contactus select {
+  outline: var(--dark-header-btn) solid 1px;
+  background-color: var(--dark-bodybackground);
+  color: var(--dark-color-inputText);
+}
+
+body.dark-theme .box-contactus textarea {
+  outline: var(--dark-header-btn) solid 1px;
+  background-color: var(--dark-bodybackground);
+  color: var(--dark-body-color);
+}
+
+body.dark-theme .box-contactus input[type="submit"] {
+  background-color: var(--dark-header-btn);
+  color: var(--dark-body-color);
+}
+
+body.dark-theme .box-contactus input[type="submit"]:hover {
+  background-color: var(--dark-header-btn-hover);
+  color: var(--dark-body-color);
+}
+
+@media screen AND (max-width: 1200px) {
+  .boxinter {
+    border: solid red 3px;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .contactus {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: auto;
+    margin-left: 30px;
+  }
+
+  .box-contactus {
+    margin-top: 20px;
+    flex: 0 0 calc(50% - 15px);
+    align-items: center;
+    padding: 20px;
+    margin-right: 50px;
+    border-radius: 5px;
+  }
+
+  .box-contactus textarea {
+    min-width: 500px;
+  }
+
+  #btn-facebook,
+  #btn-twitter,
+  #btn-instagram {
+    width: 58%;
+  }
 }
