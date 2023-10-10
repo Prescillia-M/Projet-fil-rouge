@@ -38,7 +38,6 @@
             <option value="choix3">Je souhaite supprimer mon compte</option>
             <option value="choix4">Signaler un bug</option>
             <option value="choix5">Autre demande</option>
-            <!-- Ajoutez autant d'options que nécessaire -->
           </select>
           <br><br>
           <label for="email"><i class="fas fa-at"></i> Adresse email:</label><br>

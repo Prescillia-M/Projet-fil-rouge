@@ -1,9 +1,9 @@
 /* Couleurs général (dark & light mode)*/
 :root {
-  /* light mode (mode2) */
-  --light-bodybackground: #ffffff;
+  /* light mode (mode1) */
+  --light-bodybackground: #fcfafa;
   --light-body-color: #1e1e1e;
-  --light-header-nav-footer: #f9f9f9;
+  --light-header-nav-footer: #ffffff;
   --light-header-nav-footer-police: #1e1e1e;
   --light-footer-a: #3a3a3a;
   --light-nav-hover: #ebebeb;
@@ -12,6 +12,7 @@
   --light-header-btn-hover: #d4d4d4;
   --light-modal-cookies-bg: #ffffff;
   --light-color-inputText: #1e1e1e;
+  --light-header-nav-footer-shadow: #d2d2d2;
 
   /* dark mode (mode2) */
   --dark-bodybackground: #212121;
@@ -25,6 +26,7 @@
   --dark-header-btn-hover: #3e3e3e;
   --dark-modal-cookies-bg: #0c0c0c;
   --dark-color-inputText: #767676;
+  --dark-header-nav-footer-shadow: #161616;
 }
 
 /* ================================================================================================================== */
@@ -417,11 +419,13 @@ footer ul li {
 body:not(.dark-theme) .header-top {
   background-color: var(--light-header-nav-footer);
   color: var(--light-header-nav-footer-police);
+  box-shadow: 0 0 2px var(--light-header-nav-footer-shadow);
 }
 
 body:not(.dark-theme) .sidebar {
   background-color: var(--light-header-nav-footer);
   color: var(--light-header-nav-footer-police);
+  box-shadow: 0 0 2px var(--light-header-nav-footer-shadow);
 }
 
 body:not(.dark-theme) .sidebar a {
@@ -472,6 +476,7 @@ body:not(.dark-theme) .help-btn:hover {
 body:not(.dark-theme) footer {
   background-color: var(--light-header-nav-footer);
   color: var(--light-header-nav-footer-police);
+  box-shadow: 0 0 2px var(--light-header-nav-footer-shadow);
 }
 
 body:not(.dark-theme) footer a {
@@ -528,11 +533,13 @@ body.dark-theme {
 body.dark-theme .header-top {
   background-color: var(--dark-header-nav-footer);
   color: var(--dark-header-nav-footer-police);
+  box-shadow: 0 0 2px var(--dark-header-nav-footer-shadow);
 }
 
 body.dark-theme .sidebar {
   background-color: var(--dark-header-nav-footer);
   color: var(--dark-header-nav-footer-police);
+  box-shadow: 0 0 2px var(--dark-header-nav-footer-shadow);
 }
 
 body.dark-theme .sidebar a {
@@ -583,6 +590,7 @@ body.dark-theme .help-btn:hover {
 body.dark-theme footer {
   background-color: var(--dark-header-nav-footer);
   color: var(--dark-header-nav-footer-police);
+  box-shadow: 0 0 2px var(--dark-header-nav-footer-shadow);
 }
 
 body.dark-theme footer a {
@@ -627,7 +635,7 @@ body.dark-theme .box-contactus input[type="submit"]:hover {
   color: var(--dark-body-color);
 }
 
-@media screen AND (max-width: 1200px) {
+@media screen AND (max-width: 1400px) {
   .boxinter {
     border: solid red 3px;
     width: 300px;
