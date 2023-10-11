@@ -12,9 +12,9 @@
       <h2><i class="fas fa-list"></i> Liens utiles</h2>
       <ul>
         <!-- Ne pas toucher aux liens, on fera par pop-up ! -->
-        <li><a href="">Conditions d'utilisation</a></li>
-        <li><a href="">Conditions d'inscriptions</a></li>
-        <li><a href="#" id="openModal">Nos délicieux cookies</a></li>
+        <li><a href="./privacy.php">Politique de confidentialité</a></li>
+        <li><a href="./terms.php">Conditions d'inscriptions</a></li>
+        <li><a href="./cookies.php">Nos délicieux cookies</a></li>
       </ul>
     </div>
 

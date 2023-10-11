@@ -33,7 +33,7 @@
 
     <!-- Bouton Connexion / Assistance -->
   <a href="./login.php"><button class="login-btn"><i class="fas fa-key"></i> Connexion / Inscription</button></a>
-  <a href="./assistance.php"><button class="help-btn"><i class="fas fa-envelope"></i> Assistance</button></a>
+  <a href="./assistance.php"><button class="help-btn"><i class="fas fa-life-ring"></i> Assistance</button></a>
 
   <!-- Script pour changer le thème (dark/light) -->
   <script src="./js/mode.js"></script>
