@@ -1,3 +1,4 @@
+<!-- Navigation générale du site -->
 <div class="sidebar">
     <nav>
       <ul>
@@ -12,12 +13,29 @@
       </ul>
     </nav>
   </div>
-  <header class="header-top">
-    <div class="logo">
-      <a href="./"><img src="../assets/logo.png" alt="Logo du site" class="logo" width="100px"></a>
-    </div>
+  
+<!-- Bouton recherche -->
+<div class="search">
+  <form action="#" method="get">
+    <input type="text" name="query" placeholder="Entrez votre recherche" />
+    <button type="submit">
+      <i class="fa fa-search"></i>
+    </button>
+  </form>
+</div>
+
+<header class="header-top">
+
+  <!-- Logo -->
+  <div class="logo">
+    <a href="./"><img src="../assets/logo.png" alt="Logo du site" class="logo" width="100px"></a>
+  </div>
+
+    <!-- Bouton Connexion / Assistance -->
   <a href="./login.php"><button class="login-btn"><i class="fas fa-key"></i> Connexion / Inscription</button></a>
-  <a href="./assistance.php"><button class="help-btn"><i class="fas fa-envelope"></i> Assistance</button></a>
+  <a href="./assistance.php"><button class="help-btn"><i class="fas fa-life-ring"></i> Assistance</button></a>
+
+  <!-- Script pour changer le thème (dark/light) -->
   <script src="./js/mode.js"></script>
   </header>
   

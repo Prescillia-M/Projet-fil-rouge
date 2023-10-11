@@ -18,9 +18,7 @@ toggleButton.addEventListener("click", toggleTheme);
 
 // Fonction pour détecter et appliquer le thème en fonction des préférences de l'utilisateur
 function detectTheme() {
-  const prefersDarkMode = window.matchMedia(
-    "(prefers-color-scheme: light)"
-  ).matches; // light = thème clair par défaut | dark = thème sombre par défaut
+  const prefersDarkMode = window.matchMedia("(prefers-color-scheme: light)").matches; // light = thème clair par défaut | dark = thème sombre par défaut
   const userTheme = localStorage.getItem("theme");
 
   if (userTheme === "dark" || (prefersDarkMode && userTheme !== "light")) {

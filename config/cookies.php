@@ -1,9 +1,7 @@
 <div id="cookie-consent-box">
     <img id="cookie-image" src="./assets/cookie.png" alt="Image de cookies">
     <h2>Tu veux un cookie?</h2>
-    <p>Nous utilisons des cookies pour vous offrir la meilleure expérience sur notre site.<br>En continuant,
-        vous acceptez notre utilisation des cookies.<br><a href="#" id="openModal"><i>En savoir plus sur nos
-                délicieux cookies</i></a> 🤤</p>
+    <p>Nous utilisons des cookies pour vous offrir la meilleure expérience sur notre site.<br>En continuant, vous acceptez notre utilisation des cookies.<br><a href="#" id="openModal"><i>En savoir plus sur nos délicieux cookies</i></a> 🤤</p>
     <button id="accept-cookies" class="accept-cookies-btn">Manger ce cookie</button>
     <button id="refuse-cookies" class="refuse-cookies-btn">Je suis au régime</button>
 </div>
