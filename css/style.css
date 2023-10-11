@@ -53,7 +53,8 @@ textarea,
 input,
 .box-contactus,
 .boxinter,
-select {
+select,
+.search form button {
   transition: 0.4s; /* Délais de 0.5secondes au changement dark/light */
 }
 
@@ -411,6 +412,32 @@ footer ul li {
   cursor: pointer;
 }
 
+/* Barre de recherche */
+.search {
+  position: fixed;
+  z-index: 1;
+  margin-top: 31px;
+  margin-left: 20%;
+}
+
+/* Style pour la barre de recherche */
+.search form input {
+  padding: 7px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  margin-right: -5px;
+}
+
+/* Style pour le bouton de recherche */
+.search form button {
+  padding: 7px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+}
+
+
+
+
 /* 
 
   MODE CLAIR // CONFIGURATION
@@ -517,6 +544,14 @@ body:not(.dark-theme) .box-contactus input[type="submit"] {
 body:not(.dark-theme) .box-contactus input[type="submit"]:hover {
   background-color: var(--light-header-btn-hover);
   color: var(--light-body-color);
+}
+
+body:not(.dark-theme) .search form input {
+  outline: solid 1px var(--light-header-btn);
+}
+
+body:not(.dark-theme) .search form button {
+  outline: solid 1px var(--light-header-btn);
 }
 
 /* 
@@ -633,6 +668,18 @@ body.dark-theme .box-contactus input[type="submit"] {
 body.dark-theme .box-contactus input[type="submit"]:hover {
   background-color: var(--dark-header-btn-hover);
   color: var(--dark-body-color);
+}
+
+body.dark-theme .search form input {
+  outline: solid 1px var(--dark-header-btn);
+  background-color: var(--dark-bodybackground);
+  color: var(--dark-header-nav-footer-police);
+}
+
+body.dark-theme .search form button {
+  outline: solid 1px var(--dark-header-btn);
+  background-color: var(--dark-header-btn);
+  color: var(--dark-color-inputText);
 }
 
 @media screen AND (max-width: 1400px) {
