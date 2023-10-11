@@ -301,6 +301,7 @@ footer ul li {
   height: 450px;
   justify-content: center;
   align-items: center;
+  z-index: 99999;
 }
 
 .modal-content-cookie {
@@ -385,6 +386,8 @@ footer ul li {
   padding: 12px;
   border: none;
   border-radius: 5px;
+  margin-top: 7px;
+  margin-bottom: 15px;
   appearance: none;
   background-image: url('../assets/dropdown.png');
   background-repeat: no-repeat;
@@ -434,9 +437,6 @@ footer ul li {
   border: none;
   border-radius: 0 5px 5px 0;
 }
-
-
-
 
 /* 
 
