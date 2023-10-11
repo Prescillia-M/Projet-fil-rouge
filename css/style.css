@@ -518,7 +518,7 @@ body:not(.dark-theme) .modal-content-cookie {
 body:not(.dark-theme) .box-contactus {
   background-color: var(--light-header-nav-footer);
   color: var(--light-body-color);
-  box-shadow: 0 0 4px #ababab;
+  box-shadow: 0 0 2px var(--light-header-nav-footer-shadow);
 }
 
 body:not(.dark-theme) .box-contactus input {
@@ -640,6 +640,7 @@ body.dark-theme .modal-content-cookie {
 body.dark-theme .box-contactus {
   background-color: var(--dark-header-nav-footer);
   color: var(--dark-body-color);
+  box-shadow: 0 0 2px var(--dark-header-nav-footer-shadow);
 }
 
 body.dark-theme .box-contactus input {
@@ -694,7 +695,7 @@ body.dark-theme .search form button {
 
   .contactus {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: space-between;
     width: auto;
     margin-left: 30px;
