@@ -28,12 +28,19 @@
 
 <!-- Bouton recherche -->
 <div class="search">
-  <form action="#" method="get">
-    <input type="text" name="query" placeholder="Entrez votre recherche" />
+  
+    <input onkeyup="search_sport()" id="searchBar" type="text" name="query" placeholder="Entrez votre recherche" />
+    <ol id='list'>
+      <li class="sport"><a href="./basketball.php">basketball</a></li>
+      <li class="sport"><a href="./automobile.php">automobile</a></li>
+      <li class="sport"><a href="./tennis.php">tennis</a></li>
+      <li classe="sport"><a href="./boxe.php">boxe</a></li>
+      <li class="sport"><a href="./cyclisme.php">cyclisme</a></li>
+    </ol>
     <button type="submit">
       <i class="fa fa-search"></i>
     </button>
-  </form>
+  
 </div>
 
 <div class="btnheader">
@@ -57,24 +64,19 @@ if (isset($_SESSION['user_id'])) {
 }
 ?>
 
-
-
 </div>
 
 <header class="header-top">
 
   <!-- Logo -->
   <div class="logo">
-    <a href="./"><img src="../assets/logo.png" alt="Logo du site" class="logo" width="100px"></a>
+    <a href="./"><img src="./assets/logo.png" alt="Logo du site" class="logo" width="100px"></a>
   </div>
-
-
-
-  <!-- Bouton Connexion / Assistance -->
-  <!-- <a href="./login.php"><button class="login-btn"><i class="fas fa-key"></i> Connexion / Inscription</button></a> -->
   
 
   <!-- Script pour changer le thème (dark/light) -->
+  
   <script src="./js/mode.js"></script>
   <script src="./js/userMenu.js"></script>
+  <script src="./js/searchBar.js"></script>
 </header>

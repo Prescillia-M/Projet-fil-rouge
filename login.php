@@ -15,6 +15,7 @@ if (isset($_SESSION['user_id'])) {
   <title>Connexion ou Inscription / <?php echo $website_name; ?></title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/searchBar.css">
 </head>
 
 <body>
@@ -57,6 +58,9 @@ if (isset($_SESSION['user_id'])) {
     </div>
 
   </div>
+
+  <!-- Insertion des fonctionnalités de la searchBar -->
+  <script src= "./js/SearchBar.js"></script>
 
   <!-- Configuration des cookies. (config -> cookies.php) -->
   <?php include('./config/cookies.php'); ?>

@@ -13,6 +13,7 @@ session_start();
   </title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/searchBar.css">
 </head>
 
 <body>
@@ -52,6 +53,9 @@ session_start();
       <strong>Nous utilisons</strong> des <a href="./cookies.php">cookies</a> pour vous distinguer des autres utilisateurs de notre site Internet. Cela nous permet de vous offrir une expérience personnalisée lorsque vous naviguez sur ce site.
     </p>
   </div>
+
+  <!-- Insertion des fonctionnalités de la searchBar -->
+  <script src="./js/searchBar.js"></script>
 
   <!-- Configuration des cookies. (config -> cookies.php) -->
   <?php include('./config/cookies.php'); ?>
