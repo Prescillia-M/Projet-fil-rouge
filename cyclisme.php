@@ -28,7 +28,20 @@ session_start();
   <div class="content">
 
 
-    <p>Développer et mettre le contenu cyclisme.</p>
+  <div class="actualites">
+      <h2>Actualités</h2>
+    <img src="./assets/tour-de-france.jfif" alt="tour-de-france">
+      <h3>Tour de France. Vers un Grand Départ dans le Nord en 2025 ?</h3>
+    
+      <p>Selon nos informations, le Grand Départ du Tour de France 2025 pourrait avoir lieu dans la région Hauts-de-France. Les coureurs descendraient ensuite vers l’Ouest avec des arrivées en Normandie et en Bretagne.</p>
+                    <img src="./assets/viviani.jpg" alt="viviani">
+                    <h3>Elia Viviani vainqueur de la 1re étape du Tour du Guangxi</h3>
+
+                    <p>L'Italien Elia Viviani a remporté jeudi la première étape du Tour du Guangxi en Chine. Le coureur de la formation Ineos Grenadiers a devancé au sprint son compatriote Jonathan Milan (Bahrain) et l'Irlandais Sam Bennett (BORA). Le premier Français Donavan Grondin (Arkéa) a terminé 27e au milieu du peloton.</p>
+
+                    
+      </div>
+      
 
   </div>
 
