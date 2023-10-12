@@ -59,8 +59,8 @@ Derrière, George Russell, Charles Leclerc, Fernando Alonso, Esteban Ocon, Valtt
       </div>
       <div class="resultat">
         <h2>Résultats</h2>
-        <img src="./assests/Qatar_resultats.jpeg" alt="resultat1">
-        <img src="" alt="resultat2">
+        <img src="./assets/Qatar_resultats.jpeg" alt="resultat1">
+        <!-- <img src="" alt="resultat2"> -->
 
       </div>
 
