@@ -456,6 +456,47 @@ footer ul li {
   cursor: pointer;
 }
 
+.btnheader {
+  z-index: 3;
+  position: fixed;
+  top: 10px; /* Ajustez la valeur en fonction de la distance par rapport au haut de la page */
+  right: 20px; /* Ajustez la valeur en fonction de la distance par rapport à la droite de la page */
+}
+
+/* Menu utilisateur (une fois connecté) */
+.userMenu {
+  position: relative;
+  display: inline-block;
+}
+
+.userMenu-button {
+  position: fixed;
+  top: 15px;
+  padding: 7px;
+  border-radius: 5px;
+  right: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+.userMenu-content {
+  display: none;
+  position: absolute;
+  border-radius: 5px;
+  min-width: 160px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  top: 20px;
+  left: -170px;
+  z-index: 3;
+}
+
+.userMenu-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
 /* 
 
   MODE CLAIR // CONFIGURATION
@@ -507,6 +548,27 @@ body:not(.dark-theme) .login-btn {
 
 body:not(.dark-theme) .login-btn:hover {
   background-color: var(--light-header-btn-hover);
+}
+
+body:not(.dark-theme) .userMenu-button {
+  background-color: var(--light-header-btn);
+  color: var(--light-header-nav-footer-police);
+}
+
+body:not(.dark-theme) .userMenu-button:hover {
+  background-color: var(--light-header-btn-hover);
+}
+
+body:not(.dark-theme) .userMenu-content {
+  background-color: var(--light-bodybackground);
+}
+
+body:not(.dark-theme) .userMenu-content a {
+  color: var(--light-footer-a);
+}
+
+body:not(.dark-theme) .userMenu-content a:hover {
+  background-color: var(--light-nav-hover);
 }
 
 body:not(.dark-theme) .help-btn {
@@ -633,6 +695,27 @@ body.dark-theme .login-btn {
 
 body.dark-theme .login-btn:hover {
   background-color: var(--dark-header-btn-hover);
+}
+
+body.dark-theme .userMenu-button {
+  background-color: var(--dark-header-btn);
+  color: var(--dark-header-nav-footer-police);
+}
+
+body.dark-theme .userMenu-button:hover {
+  background-color: var(--dark-header-btn-hover);
+}
+
+body.dark-theme .userMenu-content {
+  background-color: var(--dark-bodybackground);
+}
+
+body.dark-theme .userMenu-content a {
+  color: var(--dark-footer-a);
+}
+
+body.dark-theme .userMenu-content a:hover {
+  background-color: var(--dark-nav-hover);
 }
 
 body.dark-theme .help-btn {

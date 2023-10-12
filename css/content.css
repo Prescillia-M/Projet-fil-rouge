@@ -1,7 +1,7 @@
 .content {
     display: flex;
 }
-.actualites {
+.content .actualites {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -11,7 +11,7 @@
     margin-top: 8px;
 }
 
-.resultat {
+.content .resultat {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -25,7 +25,7 @@
     width: 60%;
 }
 
-h3 {
+.content h3 {
     text-align: center;
     width: 60%;
 }
