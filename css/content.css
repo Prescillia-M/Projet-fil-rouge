@@ -5,21 +5,28 @@
     width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     overflow: scroll;
+    margin-top: 8px;
 }
 
 .resultat {
     width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-cckontent: center; */
     align-items: center;
     overflow: scroll;
+    margin-top: 8px;
 }
 
-img , p {
+.content img , p , h3 {
+    width: 60%;
+}
+
+h3 {
+    text-align: center;
     width: 60%;
 }
 

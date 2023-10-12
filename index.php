@@ -24,12 +24,7 @@
     <div class="content">
       <section class="boxinter">
         <p>Bienvenue sur notre site! 
-            Ce site fournit des informations sur les derniers événements sportifs, les résultats et les analyses pour les sports suivants: <br>
-                Sport automobile <br>
-                Cyclisme <br>
-                Boxe anglaise <br>
-                Tennis <br>
-                Basket <br>
+            Ce site fournit des informations sur les derniers événements sportifs, les résultats et les analyses des sports tel que le sport automobile, le cyclisme, la boxe anglaise, le tennis et le basketball. <br> 
             Nous espérons que vous apprécierez notre site et que vous trouverez toutes les informations dont vous
             avez besoin pour rester informé sur vos sports préférés.</p>
       </section>

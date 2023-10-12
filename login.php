@@ -22,7 +22,32 @@
   <div class="content">
 
 
-    <p>Développer et mettre le contenu connexion / inscription.</p>
+  <div class="contactus">
+      <div class="box-contactus">
+        <h2>Connexion</h2>
+
+        <form action="./traitement_connection.php" method="post">
+          <label for="email-login"><i class="fas fa-at"></i> Adresse email:</label><br>
+          <input type="email" name="email" id="email-login" placeholder="Votre adresse email" require /> <br><br>
+          <label for="password-login"><i class="fas fa-eye-slash"></i> Mot de passe:</label><br>
+          <input type="password" name="password" id="password-login" placeholder="Mot de passe" require /> <br><br>
+          <input type="submit" value="Connexion">
+        </form>
+      </div>
+      <div class="box-contactus">
+        <h2>Inscription</h2>
+
+        <form action="./traitement_inscription.php" method="post">
+          <label for="name-singup"><i class="fas fa-user"></i> Nom d'utilisateur:</label><br>
+          <input type="name" name="name" id="name-singup" placeholder="Votre nom d'utilisateur" require /> <br><br>
+          <label for="email-singup"><i class="fas fa-at"></i> Adresse email:</label><br>
+          <input type="email" name="email" id="email-singup" placeholder="Votre adresse email" require /> <br><br>
+          <label for="password-singup"><i class="fas fa-eye-slash"></i> Mot de passe:</label><br>
+          <input type="password" name="password" id="password-singup" placeholder="Mot de passe" require /> <br><br>
+          <input type="submit" value="Inscription">
+        </form>
+      </div>
+    </div>
 
   </div>
 
