@@ -34,12 +34,9 @@
       <li class="sport"><a href="./basketball.php">basketball</a></li>
       <li class="sport"><a href="./automobile.php">automobile</a></li>
       <li class="sport"><a href="./tennis.php">tennis</a></li>
-      <li classe="sport"><a href="./boxe.php">boxe</a></li>
+      <li class="sport"><a href="./boxe.php">boxe</a></li>
       <li class="sport"><a href="./cyclisme.php">cyclisme</a></li>
     </ol>
-    <button type="submit">
-      <i class="fa fa-search"></i>
-    </button>
   
 </div>
 

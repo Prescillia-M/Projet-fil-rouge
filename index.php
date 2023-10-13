@@ -42,7 +42,7 @@ session_start();
         avez besoin pour rester informé sur vos sports préférés.</p>
     </section>
     <section class="boxinter">
-      <p>Développer et mettre la page d'Accueil.</p>
+      <img src="./assets/jo-paris.jpg" alt="jo-paris">
     </section>
   </div>
 
